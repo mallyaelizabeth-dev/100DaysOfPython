@@ -11,7 +11,7 @@ def get_valid_size():
 # function to get a valid Yes or No response!
 def get_valid_yes_no(question):
     choice = input(question).upper()
-    while choice not in ['Y', 'N']: # Force the use to choose the correct response!
+    while choice not in ['Y', 'N']: # Force the user to choose the correct response!
         print("Invalid input! Please choose either Y or N.")
         choice = input(question).upper()
     return choice
@@ -43,9 +43,7 @@ if add_pepperoni == "Y":
 # Add extra cheese 
 if extra_cheese == "Y":
     bill += 1
-    
-    
-    
+      
 # Final bill
 print(f"Your final pizza bill is {bill}")
 
