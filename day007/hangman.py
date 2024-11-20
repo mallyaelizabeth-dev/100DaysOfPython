@@ -1,9 +1,10 @@
 import random
 import hangmanAscii
-import hangmanLogo
+import hangmanLogo 
+import wordsList # import the module with list of 100s of words
 
-word_list = ["ardvark", "baboon", "camel"]
-chosen_word = random.choice(word_list)
+# word_list = ["ardvark", "baboon", "camel"]
+chosen_word = random.choice(wordsList.word_list)
 display = ["_" for _ in chosen_word]  # Initial display with blanks
 
 lives = 6  # Number of incorrect guesses allowed
